@@ -8,6 +8,8 @@ def interface():
         choice = input("Enter choice: ")
         if choice == "9":
             return
-    
+
+def keyboardInputHDL():
+    return int(input("Enter HDL Value:"))
     
 interface()
