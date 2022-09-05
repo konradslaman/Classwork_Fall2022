@@ -19,4 +19,10 @@ def check_HDL(HDL):
         return 'Borderline Low'
     else:
         return 'Low'
+
+def drive_HDL():
+    HDL = keyboardInputHDL()
+    level = check_HDL(HDL)
+    
+
 interface()
