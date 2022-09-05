@@ -12,4 +12,11 @@ def interface():
 def keyboardInputHDL():
     return int(input("Enter HDL Value:"))
     
+def check_HDL(HDL):
+    if(HDL>=60):
+        return 'Normal'
+    elif(HDL>=40):
+        return 'Borderline Low'
+    else:
+        return 'Low'
 interface()
