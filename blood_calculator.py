@@ -62,4 +62,12 @@ def drive_LDL():
 def keyboardInputTC():
     return int(input("ENter Total Cholesterol Value: "))
 
+def check_TC(TC):
+    if(TC<200):
+        return 'Normal'
+    elif(TC<=239):
+        return 'Borderline High'
+    else:
+        return 'High'
+
 interface()
