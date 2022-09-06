@@ -63,7 +63,7 @@ def drive_LDL():
     output_LDL(LDL,level)
 
 def keyboardInputTC():
-    return int(input("ENter Total Cholesterol Value: "))
+    return int(input("Enter Total Cholesterol Value: "))
 
 def check_TC(TC):
     if(TC<200):
