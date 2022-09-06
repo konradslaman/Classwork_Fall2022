@@ -16,6 +16,7 @@ def interface():
         if choice == "2":
             drive_LDL()
         
+        
 
 def keyboardInputHDL():
     return int(input("Enter HDL Value: "))
@@ -73,5 +74,9 @@ def check_TC(TC):
 def output_TC(val, str):
     print("The results of your Total Cholesterol test is a value of {} which is {}".format(val,str))
 
+def drive_TC():
+    TC = keyboardInputTC()
+    level = check_TC(TC)
+    output_TC(TC,level)
 
 interface()
