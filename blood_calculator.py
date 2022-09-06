@@ -3,6 +3,7 @@ def interface():
     print("Options:")
     print("1 - HDL Test")
     print("2 - LDL Test")
+    print("3 - TC Test")
     print("9 - Quit")
 
 
@@ -15,7 +16,8 @@ def interface():
             drive_HDL()
         if choice == "2":
             drive_LDL()
-        
+        if choice == "3":
+            drive_TC()
         
 
 def keyboardInputHDL():
