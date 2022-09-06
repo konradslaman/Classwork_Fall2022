@@ -2,6 +2,7 @@ def interface():
     print("Blood Calculator")
     print("Options:")
     print("1 - HDL Test")
+    print("2 - LDL Test")
     print("9 - Quit")
 
 
@@ -12,9 +13,12 @@ def interface():
             return
         if choice == "1":
             drive_HDL()
+        if choice == "2":
+            drive_LDL()
+        
 
 def keyboardInputHDL():
-    return int(input("Enter HDL Value:"))
+    return int(input("Enter HDL Value: "))
     
 def check_HDL(HDL):
     if(HDL>=60):
@@ -32,5 +36,27 @@ def drive_HDL():
     HDL = keyboardInputHDL()
     level = check_HDL(HDL)
     output_HDL(HDL,level)
+
+def keyboardInputLDL():
+    return int(input("Enter LDL Value: "))
+    
+def check_LDL(LDL):
+    if(LDL<130):
+        return 'Normal'
+    elif(LDL<=159):
+        return 'Borderline High'
+    elif(LDL<=189):
+        return 'High'
+    else:
+        return 'Very High'
+
+def output_LDL(val, str):
+    print("The results of your LDL test is a value of {} which is {}".format(val,str))
+
+
+def drive_LDL():
+    LDL = keyboardInputLDL()
+    level = check_LDL(LDL)
+    output_LDL(LDL,level)
 
 interface()
