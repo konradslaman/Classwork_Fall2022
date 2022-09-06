@@ -59,4 +59,7 @@ def drive_LDL():
     level = check_LDL(LDL)
     output_LDL(LDL,level)
 
+def keyboardInputTC():
+    return int(input("ENter Total Cholesterol Value: "))
+
 interface()
