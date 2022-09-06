@@ -3,6 +3,7 @@ def interface():
     print("Options:")
     print("1 - HDL Test")
     print("2 - LDL Test")
+    print("3 - TC Test")
     print("9 - Quit")
 
 
@@ -15,6 +16,8 @@ def interface():
             drive_HDL()
         if choice == "2":
             drive_LDL()
+        if choice == "3":
+            drive_TC()
         
 
 def keyboardInputHDL():
@@ -58,5 +61,24 @@ def drive_LDL():
     LDL = keyboardInputLDL()
     level = check_LDL(LDL)
     output_LDL(LDL,level)
+
+def keyboardInputTC():
+    return int(input("Enter Total Cholesterol Value: "))
+
+def check_TC(TC):
+    if(TC<200):
+        return 'Normal'
+    elif(TC<=239):
+        return 'Borderline High'
+    else:
+        return 'High'
+
+def output_TC(val, str):
+    print("The results of your Total Cholesterol test is a value of {} which is {}".format(val,str))
+
+def drive_TC():
+    TC = keyboardInputTC()
+    level = check_TC(TC)
+    output_TC(TC,level)
 
 interface()
