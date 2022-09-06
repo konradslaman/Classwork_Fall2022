@@ -70,4 +70,8 @@ def check_TC(TC):
     else:
         return 'High'
 
+def output_TC(val, str):
+    print("The results of your Total Cholesterol test is a value of {} which is {}".format(val,str))
+
+
 interface()
