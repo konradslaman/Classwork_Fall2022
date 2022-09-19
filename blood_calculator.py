@@ -81,4 +81,5 @@ def drive_TC():
     level = check_TC(TC)
     output_TC(TC,level)
 
-interface()
+if __name__ == "__main__":
+    interface()
