@@ -32,13 +32,14 @@ def check_HDL(HDL):
 
 
 def output_HDL(val, str):
-    print("The results of your HDL test is a value of {} which is {}".format(val,str))
+    print("The results of your HDL test is a value of {} \
+        which is {}".format(val, str))
 
 
 def drive_HDL():
     HDL = keyboardInputHDL()
     level = check_HDL(HDL)
-    output_HDL(HDL,level)
+    output_HDL(HDL, level)
 
 
 def keyboardInputLDL():
@@ -57,13 +58,14 @@ def check_LDL(LDL):
 
 
 def output_LDL(val, str):
-    print("The results of your LDL test is a value of {} which is {}".format(val,str))
+    print("The results of your LDL test is a value of {} \
+        which is {}".format(val, str))
 
 
 def drive_LDL():
     LDL = keyboardInputLDL()
     level = check_LDL(LDL)
-    output_LDL(LDL,level)
+    output_LDL(LDL, level)
 
 
 def keyboardInputTC():
@@ -80,13 +82,14 @@ def check_TC(TC):
 
 
 def output_TC(val, str):
-    print("The results of your Total Cholesterol test is a value of {} which is {}".format(val,str))
+    print("The results of your Total Cholesterol test is a value of {} \
+        which is {}".format(val, str))
 
 
 def drive_TC():
     TC = keyboardInputTC()
     level = check_TC(TC)
-    output_TC(TC,level)
+    output_TC(TC, level)
 
 
 if __name__ == "__main__":
